@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, Container, extendTheme } from "@chakra-ui/react";
 import SidebarWithHeader from "@/components/navbar/Navbar";
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -13,7 +13,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <SidebarWithHeader>
-        <Component {...pageProps} />
+        <Container maxW={"7xl"}>
+          <Component {...pageProps} />
+        </Container>
       </SidebarWithHeader>
     </ChakraProvider>
   );

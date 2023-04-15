@@ -1,0 +1,64 @@
+.scroll-down-indicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // transform: translateX(-50%);
+  cursor: pointer;
+
+  .mouse {
+    width: 30px;
+    height: 45px;
+    border: 2px solid #1a202c;
+    border-radius: 25px;
+    position: relative;
+    transform-origin: bottom center;
+    opacity: 0.8;
+    animation: fadeInOut 2s ease-in-out infinite;
+    margin-bottom: 8px;
+
+    .mouse-wheel {
+      width: 5px;
+      height: 10px;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .arrow {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin-bottom: 5px;
+    border-right: 2px solid #1a202c;
+    border-bottom: 2px solid #1a202c;
+    transform: rotate(45deg);
+    opacity: 0.8;
+    animation: fadeInOut 2s ease-in-out infinite;
+
+    &:nth-of-type(2) {
+      opacity: 0.6;
+      animation-delay: 0.2s;
+    }
+
+    &:nth-of-type(3) {
+      opacity: 0.4;
+      animation-delay: 0.4s;
+    }
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}

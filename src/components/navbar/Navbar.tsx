@@ -22,6 +22,7 @@ import {
   MenuItem,
   MenuList,
   useColorMode,
+  Container,
 } from "@chakra-ui/react";
 import {
   FiHome,
@@ -52,7 +53,7 @@ export default function SidebarWithHeader({ children }: { children: ReactNode })
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box minH="100vh">
+    <Container maxW={"7xl"}>
       <Drawer
         autoFocus={false}
         isOpen={isOpen}
@@ -70,7 +71,7 @@ export default function SidebarWithHeader({ children }: { children: ReactNode })
       <Navbar onOpen={onOpen} />
 
       <Box p="4">{children}</Box>
-    </Box>
+    </Container>
   );
 }
 
