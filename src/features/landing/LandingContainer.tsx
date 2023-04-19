@@ -1,17 +1,19 @@
-import { Container } from "@chakra-ui/react";
+import { Box, Spinner } from "@chakra-ui/react";
+import dynamic from "next/dynamic";
 
-import { HeroSection } from "./HeroSection";
-import SkillsSection from "./SkillsSection";
-import ThreeDHeroSection from "./ThreeDHeroSection";
+const HeroSection = dynamic(() => import("./HeroSection").then((mod) => mod.default), {
+  ssr: false,
+  loading: () => (
+    <Box textAlign={"center"}>
+      <Spinner />
+    </Box>
+  ),
+});
 
 export const LandingContainer = () => {
   return (
-    <>
-      {/* <ThreeDHeroSection /> */}
+    <Box pos="relative">
       <HeroSection />
-      {/*
-      <SkillsSection />
-      */}
-    </>
+    </Box>
   );
 };
