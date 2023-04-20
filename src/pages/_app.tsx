@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import "@/styles/hero.scss";
 import type { AppProps } from "next/app";
 import { ChakraBaseProvider, Container, extendTheme } from "@chakra-ui/react";
 import SidebarWithHeader from "@/components/navbar/Navbar";

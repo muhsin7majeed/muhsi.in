@@ -1,5 +1,5 @@
 {
-  "name": "muhsin-portfolio",
+  "name": "muhsin-a",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,14 +13,9 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@react-three/fiber": "^8.12.1",
-    "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.297",
-    "@types/dat.gui": "^0.7.9",
     "@types/node": "18.15.11",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
-    "@types/three": "^0.150.1",
-    "dat.gui": "^0.7.9",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "framer-motion": "^10.11.4",
@@ -29,7 +24,6 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "sass": "^1.62.0",
-    "three": "^0.151.3",
     "typescript": "5.0.4"
   }
 }

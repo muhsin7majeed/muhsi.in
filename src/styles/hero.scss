@@ -1,0 +1,42 @@
+.hero__section {
+  .hero__text__container {
+    position: relative;
+    padding: 40px;
+
+    .welcome__text__container {
+    }
+
+    .half__border {
+      background-color: var(--chakra-colors-secondary);
+      position: absolute;
+
+      &.top {
+        width: 50%;
+        height: 20px;
+        top: 0;
+        left: 0;
+      }
+
+      &.left {
+        width: 20px;
+        height: 50%;
+        top: 0;
+        left: 0;
+      }
+
+      &.right {
+        width: 20px;
+        height: 50%;
+        bottom: 0;
+        right: 0;
+      }
+
+      &.bottom {
+        height: 20px;
+        width: 50%;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
