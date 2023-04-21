@@ -14,3 +14,10 @@ body {
 body {
   font-family: "Roboto", sans-serif;
 }
+
+
+/* Info: This makes the entire svg group interactive. */
+#floating-skills g {
+  pointer-events: bounding-box;
+  outline: none;
+}

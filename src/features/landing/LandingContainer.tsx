@@ -8,7 +8,7 @@ export const LandingContainer = () => {
     <>
       <Box color="text">
         <HeroSection />
-        {/* <SkillsSection /> */}
+        <SkillsSection />
       </Box>
     </>
   );

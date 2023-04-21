@@ -1,8 +1,8 @@
+import { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
 
 import Navbar from "@/components/navbar/Navbar";
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 
 const WELCOME_TEXT = [
   "hey there!",
@@ -17,6 +17,8 @@ const WELCOME_TEXT = [
 ];
 
 const HeroSection = () => {
+  const ref: any = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref });
   const [welcomeTextIndex, setWelcomeTextIndex] = useState<number>(0);
 
   useEffect(() => {
@@ -28,14 +30,22 @@ const HeroSection = () => {
   }, [welcomeTextIndex]);
 
   return (
-    <Box bgColor="primary" w="100vw" h="100vh" px={[2, 10, 20]} pb={16} className="hero__section">
-      <Flex direction="column" maxW={"7xl"} height="100%">
+    <Box as="section" bgColor="primary" h="100vh" px={[2, 10, 20]} pb={16} className="hero__section">
+      <Flex direction="column" maxW={"7xl"} height="100%" m="auto">
         <Box>
           <Navbar />
         </Box>
 
         <Flex px="4" w="100%" height="100%" justifyContent="center" alignItems="center">
-          <Box className="hero__text__container" boxShadow="lg">
+          <Box
+            as={motion.div}
+            style={{
+              opacity: useTransform(scrollYProgress, [0, 1], [1, 0.5]),
+              y: useTransform(scrollYProgress, [0, 1], [0, 500]),
+            }}
+            className="hero__text__container"
+            boxShadow="lg"
+          >
             <Box className="half__border top" />
             <Box className="half__border left" />
             <Box className="half__border right" />

@@ -1,10 +1,8 @@
 .hero__section {
+  // Info: To create the corner border style
   .hero__text__container {
     position: relative;
     padding: 40px;
-
-    .welcome__text__container {
-    }
 
     .half__border {
       background-color: var(--chakra-colors-secondary);
