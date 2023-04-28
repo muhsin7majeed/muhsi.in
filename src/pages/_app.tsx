@@ -6,11 +6,8 @@ import SidebarWithHeader from "@/components/navbar/Navbar";
 import Navbar from "@/components/navbar/Navbar";
 
 export const COLORS = {
-  primary: "#1A1A1A",
-  secondary: "#212121",
-  text: "#F2F2F2",
-  "accent.one": "#FF6FFF",
-  "accent.two": "#00FFFF",
+  primary: "#FF6FFF",
+  secondary: "#EBEBEB",
 };
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -22,7 +19,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ChakraBaseProvider theme={theme} resetCSS>
-     
       <Component {...pageProps} />
     </ChakraBaseProvider>
   );

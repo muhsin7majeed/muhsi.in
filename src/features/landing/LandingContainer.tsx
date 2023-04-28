@@ -6,9 +6,9 @@ import HeroSection from "./HeroSection";
 export const LandingContainer = () => {
   return (
     <>
-      <Box color="text">
+      <Box>
         <HeroSection />
-        <SkillsSection />
+        {/* <SkillsSection /> */}
       </Box>
     </>
   );
