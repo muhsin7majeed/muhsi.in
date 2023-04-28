@@ -1,40 +1,46 @@
 .hero__section {
-  // Info: To create the corner border style
-  .hero__text__container {
-    position: relative;
-    padding: 40px;
+  #code-icon {
+    animation: bounce 2s linear infinite;
+  }
 
-    .half__border {
-      background-color: var(--chakra-colors-secondary);
-      position: absolute;
-
-      &.top {
-        width: 50%;
-        height: 20px;
-        top: 0;
-        left: 0;
-      }
-
-      &.left {
-        width: 20px;
-        height: 50%;
-        top: 0;
-        left: 0;
-      }
-
-      &.right {
-        width: 20px;
-        height: 50%;
-        bottom: 0;
-        right: 0;
-      }
-
-      &.bottom {
-        height: 20px;
-        width: 50%;
-        bottom: 0;
-        right: 0;
-      }
+  #first-monitor-bg,
+  #second-monitor-bg {
+    path {
+      animation-name: changeBg;
+      animation-iteration-count: infinite;
+      animation-duration: 1s;
+      animation-direction: alternate-reverse;
+      animation-timing-function: linear;
     }
+  }
+
+  #second-monitor-bg {
+    path {
+      animation-direction: alternate;
+    }
+  }
+}
+
+@keyframes changeBg {
+  0% {
+    fill: #455a64;
+  }
+
+  100% {
+    fill: #333;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4%);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

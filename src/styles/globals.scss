@@ -6,6 +6,11 @@ body {
   height: 100%;
 }
 
+::selection {
+  color: #fff;
+  background: #455a64;
+}
+
 * {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -15,9 +20,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-
-/* Info: This makes the entire svg group interactive. */
-#floating-skills g {
-  pointer-events: bounding-box;
-  outline: none;
+a {
+  &:hover {
+    background-color: #ba68c8;
+    color: #fff;
+  }
 }

@@ -5,7 +5,7 @@ import HeroIcon from "@/components/svgs/HeroIcon";
 
 const HeroSection = () => {
   return (
-    <Container maxW={"7xl"} height={"100vh"}>
+    <Container maxW={"7xl"} height={"100vh"} className="hero__section">
       <Navbar />
 
       <Flex alignItems="center" gap={4} direction={["column-reverse", "column-reverse", "row"]} h="90%">
@@ -21,15 +21,20 @@ const HeroSection = () => {
           <Text mb={4} fontSize={"2xl"} color={"blackAlpha.600"}>
             I’m a web dev specialized in JavaScript. I’m just swimming through endless libraries and frameworks of
             javascript to find something that can{" "}
-            <Link textDecoration={"underline"} target="__blank" href="https://www.youtube.com/watch?v=B8C5sjjhsso">
+            <Link
+              textDecoration={"underline"}
+              color="primary.500"
+              target="__blank"
+              href="https://www.youtube.com/watch?v=B8C5sjjhsso"
+            >
               make the world a better place
             </Link>
             . Besides coding I love videogames, music and drawing.
           </Text>
 
           <Flex alignItems="center" gap={4}>
-            <Button colorScheme="pink">Get in touch</Button>
-            <Button colorScheme="pink" variant="outline">
+            <Button colorScheme="secondary">Get in touch</Button>
+            <Button colorScheme="secondary" variant="outline">
               Résumé
             </Button>
           </Flex>
