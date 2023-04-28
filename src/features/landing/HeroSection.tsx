@@ -33,8 +33,10 @@ const HeroSection = () => {
           </Text>
 
           <Flex alignItems="center" gap={4}>
-            <Button colorScheme="secondary">Get in touch</Button>
-            <Button colorScheme="secondary" variant="outline">
+            <Button colorScheme="secondary" boxShadow="xl">
+              Get in touch
+            </Button>
+            <Button colorScheme="secondary" boxShadow="lg" variant="outline">
               Résumé
             </Button>
           </Flex>

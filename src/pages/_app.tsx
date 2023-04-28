@@ -1,5 +1,7 @@
 import "@/styles/globals.scss";
+import "@/styles/about.scss";
 import "@/styles/hero.scss";
+import "@/styles/skills.scss";
 import type { AppProps } from "next/app";
 import { ChakraBaseProvider, extendTheme } from "@chakra-ui/react";
 

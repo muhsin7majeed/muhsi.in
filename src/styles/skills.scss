@@ -1,0 +1,19 @@
+.skills__section {
+  #icons-group {
+    animation: bounce 2s linear infinite;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
