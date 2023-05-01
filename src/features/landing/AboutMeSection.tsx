@@ -15,7 +15,7 @@ const AboutMeSection = () => {
             Who am I?
           </Heading>
 
-          <Box mb={4} fontSize={"2xl"} color={"blackAlpha.800"}>
+          <Box mb={4} fontSize={"2xl"} >
             <Text>
               Enim nulla officia dolore esse tempor occaecat aute commodo sunt. Officia dolore in magna nulla. Ex enim
               ad voluptate ad Lorem velit consectetur eu id occaecat. Voluptate officia adipisicing ipsum commodo

@@ -4,6 +4,7 @@ import "@/styles/hero.scss";
 import "@/styles/skills.scss";
 import type { AppProps } from "next/app";
 import { ChakraBaseProvider, extendTheme } from "@chakra-ui/react";
+import Footer from "@/components/footer/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   const theme = extendTheme({
@@ -38,6 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraBaseProvider theme={theme} resetCSS>
       <Component {...pageProps} />
+      <Footer />
     </ChakraBaseProvider>
   );
 }

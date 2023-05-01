@@ -11,14 +11,14 @@ const HeroSection = () => {
       <Flex alignItems="center" gap={4} direction={["column-reverse", "column-reverse", "row"]} h="90%">
         <Flex direction="column" alignItems="start" justifyContent="center" w="100%" h="100%">
           <Heading fontSize={"4xl"} mb={4}>
-            The Art of Web Development{" "}
-            <Text as="span" color="primary">
-              :
-            </Text>{" "}
+            The Art of
+            <Text as="span" ml="3" color="primary.500">
+              Web Development:
+            </Text>
             <br /> Blending Design and Functionality to Perfection
           </Heading>
 
-          <Text mb={4} fontSize={"2xl"} color={"blackAlpha.600"}>
+          <Text mb={4} fontSize={"2xl"} >
             I’m a web dev specialized in JavaScript. I’m just swimming through endless libraries and frameworks of
             javascript to find something that can{" "}
             <Link
@@ -33,10 +33,10 @@ const HeroSection = () => {
           </Text>
 
           <Flex alignItems="center" gap={4}>
-            <Button colorScheme="secondary" boxShadow="xl">
+            <Button colorScheme="primary" >
               Get in touch
             </Button>
-            <Button colorScheme="secondary" boxShadow="lg" variant="outline">
+            <Button colorScheme="primary"  variant="outline">
               Résumé
             </Button>
           </Flex>

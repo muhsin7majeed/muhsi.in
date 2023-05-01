@@ -39,7 +39,7 @@ const SkillCard = ({ skill, handleSkillSelection }: SkillCardPropTypes) => {
 
       <Icon fontSize={45} as={skill.icon} p={1} color={skill.color} />
 
-      <Heading fontSize={18} whiteSpace="nowrap" color="blackAlpha.700">
+      <Heading fontSize={18} whiteSpace="nowrap" >
         {skill.name}
       </Heading>
     </Card>
