@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import HeroSection from "./HeroSection";
 import AboutMeSection from "./AboutMeSection";
 import SkillsSection from "./SkillsSection";
+import TestimonialsSection from "./TestimonialsSection";
 
 export const LandingContainer = () => {
   return (
@@ -11,6 +12,7 @@ export const LandingContainer = () => {
         <HeroSection />
         <AboutMeSection />
         <SkillsSection />
+        <TestimonialsSection />
       </Box>
     </>
   );
