@@ -6,8 +6,7 @@ const Navbar = () => {
 
   return (
     <Flex
-      color={"secondary.500"}
-      py={8}
+      py={[4, 8, 8]}
       borderBottom={"2px solid"}
       borderColor={useColorModeValue("gray.100", "gray.700")}
       justifyContent={"space-between"}

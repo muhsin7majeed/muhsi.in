@@ -4,18 +4,18 @@ import AboutMeIcon from "@/components/svgs/AboutMeIcon";
 
 const AboutMeSection = () => {
   return (
-    <Container maxW={"7xl"} className="about_me__section">
-      <Flex alignItems="center" gap={8} direction={["column-reverse", "column-reverse", "row"]} h="90%">
+    <Container maxW={"7xl"} className="about_me__section" pb={24}>
+      <Flex alignItems="center" gap={8} direction={["column-reverse", "column-reverse", "row"]}>
         <Box w="70%">
           <AboutMeIcon />
         </Box>
 
-        <Flex direction="column" alignItems="start" justifyContent="center" w="100%" h="100%">
+        <Flex direction="column" alignItems="start" justifyContent="center" w="100%">
           <Heading fontSize={"4xl"} mb={4}>
             Who am I?
           </Heading>
 
-          <Box mb={4} fontSize={"2xl"} >
+          <Box mb={4} fontSize={"2xl"}>
             <Text>
               Enim nulla officia dolore esse tempor occaecat aute commodo sunt. Officia dolore in magna nulla. Ex enim
               ad voluptate ad Lorem velit consectetur eu id occaecat. Voluptate officia adipisicing ipsum commodo

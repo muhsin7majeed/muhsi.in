@@ -51,8 +51,7 @@ const SkillsSection = () => {
       <Modal
         isOpen={Boolean(selectedSkill)}
         onClose={handleClearSelection}
-        blockScrollOnMount={true}
-        isCentered
+        // isCentered
         motionPreset="scale"
         size="xl"
       >
@@ -78,8 +77,8 @@ const SkillsSection = () => {
       </Modal>
 
       <Container maxW={"7xl"} className="skills__section" py={24} pos="relative">
-        <Flex alignItems="center" gap={8} direction={["column-reverse", "column-reverse", "row"]} h="90%">
-          <Flex direction="column" alignItems={["center", "center", "start"]} justifyContent="center" w="100%" h="100%">
+        <Flex alignItems="center" gap={8} direction={["column-reverse", "column-reverse", "row"]}>
+          <Flex direction="column" alignItems={["center", "center", "start"]} justifyContent="center" w="100%">
             <Heading fontSize={"4xl"}>What do I know?</Heading>
 
             <Text mt={4} mb={8} textAlign={["center", "center", "start"]}>
