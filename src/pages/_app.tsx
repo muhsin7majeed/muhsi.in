@@ -1,9 +1,9 @@
 import "@/styles/globals.scss";
-import "@/styles/about.scss";
-import "@/styles/hero.scss";
-import "@/styles/skills.scss";
+import "@/styles/svgs.scss";
+
 import type { AppProps } from "next/app";
 import { ChakraBaseProvider, extendTheme } from "@chakra-ui/react";
+
 import Footer from "@/components/footer/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {

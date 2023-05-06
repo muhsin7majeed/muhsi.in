@@ -1,6 +1,7 @@
-import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Text, chakra } from "@chakra-ui/react";
 
 import AboutMeIcon from "@/components/svgs/AboutMeIcon";
+import MoreAboutMe from "./MoreAboutMe";
 
 const AboutMeSection = () => {
   return (
@@ -10,33 +11,37 @@ const AboutMeSection = () => {
           <AboutMeIcon />
         </Box>
 
-        <Flex direction="column" alignItems="start" justifyContent="center" w="100%">
+        <Box w="100%">
           <Heading fontSize={"4xl"} mb={4}>
             Who am I?
           </Heading>
 
           <Box mb={4} fontSize={"2xl"}>
-            <Text>
-              Enim nulla officia dolore esse tempor occaecat aute commodo sunt. Officia dolore in magna nulla. Ex enim
-              ad voluptate ad Lorem velit consectetur eu id occaecat. Voluptate officia adipisicing ipsum commodo
-              laboris cupidatat tempor nisi aliqua aliqua exercitation fugiat est. Eiusmod laborum deserunt do qui. Esse
-              qui velit pariatur ut aute magna nisi.
+            <Text mb={4}>
+              Hey there! My name is Muhsin, and I am a passionate web developer with a love for building things from
+              scratch. My journey into the world of web development began in my school days when my brother gifted me a
+              computer and introduced me to the wonders of programming. It wasn&apos;t long before I was tinkering with
+              HTML and CSS and creating my first website with a bold heading that read,{" "}
+              <chakra.span color="primary.500">Welcome to my website</chakra.span>. The process of bringing something to
+              life from nothing was exhilarating, and I knew then that this was the career for me.
+            </Text>
+
+            <Text mb={4}>
+              After honing my skills, I decided to take the leap and applied for a job at a small service-based company
+              called Techwarelab, Kochi, India. There, I gained valuable experience and contributed to a variety of
+              projects that helped me grow as a developer.
             </Text>
 
             <Text>
-              Labore excepteur labore dolor veniam adipisicing tempor in proident nostrud culpa. Eiusmod quis magna
-              reprehenderit laborum ad nostrud tempor ipsum non. Do mollit magna excepteur sunt anim esse non proident
-              laborum reprehenderit laborum elit Lorem. Reprehenderit sunt anim Lorem eiusmod pariatur incididunt velit
-              laborum laboris officia do dolor reprehenderit. Officia est est enim Lorem Lorem.
-            </Text>
-
-            <Text>
-              Consectetur fugiat excepteur sint id incididunt tempor. Pariatur esse reprehenderit ullamco mollit ad.
-              Anim elit ex non culpa nostrud mollit enim dolor. Qui ad ad exercitation anim in nisi irure ex commodo.
+              Today, I work for Springworks, where I have the opportunity to work with a talented team of developers and
+              create innovative solutions for a range of clients. My focus is on developing high-quality applications
+              that are not only visually appealing but also user-friendly and functional.
             </Text>
           </Box>
-        </Flex>
+        </Box>
       </Flex>
+
+      <MoreAboutMe />
     </Container>
   );
 };

@@ -1,5 +1,4 @@
-import { Box, Spinner } from "@chakra-ui/react";
-import dynamic from "next/dynamic";
+import { Box } from "@chakra-ui/react";
 import HeroSection from "./HeroSection";
 import AboutMeSection from "./AboutMeSection";
 import SkillsSection from "./SkillsSection";
@@ -12,7 +11,7 @@ export const LandingContainer = () => {
         <HeroSection />
         <AboutMeSection />
         <SkillsSection />
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
       </Box>
     </>
   );
