@@ -1,4 +1,5 @@
 import { Button, Flex, Text, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import Link from "next/link";
 import { BsMoonFill, BsSun } from "react-icons/bs";
 
 const Navbar = () => {
@@ -12,7 +13,14 @@ const Navbar = () => {
       justifyContent={"space-between"}
       alignItems="center"
     >
-      <Text fontSize={22} fontWeight={"black"} fontFamily={"poppins"}>
+      <Text
+        fontSize={22}
+        as={Link}
+        href="/"
+        fontWeight={"black"}
+        _hover={{ color: "blackAlpha.700", bgColor: "initial" }}
+        fontFamily={"poppins"}
+      >
         Muhsin
       </Text>
 

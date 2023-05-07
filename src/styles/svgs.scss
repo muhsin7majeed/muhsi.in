@@ -127,6 +127,22 @@ svg#freepik_stories-work-time.animated #freepik--Characters--inject-16--inject-3
 }
 
 /* -------------------------------------------------------------------------- */
+/*                                  404 PAGE                                  */
+/* -------------------------------------------------------------------------- */
+
+svg#freepik_stories-oops-404-error-with-a-broken-robot:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-oops-404-error-with-a-broken-robot.animated #freepik--error-404--inject-33 {
+  animation: 1.5s Infinite linear floating;
+  animation-delay: 0s;
+}
+svg#freepik_stories-oops-404-error-with-a-broken-robot.animated #freepik--speech-bubble--inject-33 {
+  animation: 1.5s Infinite linear wind;
+  animation-delay: 0s;
+}
+
+/* -------------------------------------------------------------------------- */
 /*                                  KEYFRAMES                                 */
 /* -------------------------------------------------------------------------- */
 
