@@ -1,4 +1,4 @@
-import { Box, Button, Container, Flex, Link } from "@chakra-ui/react";
+import { Box, Button, Container, Flex } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { BsArrowLeftCircleFill } from "react-icons/bs";
 
@@ -10,9 +10,9 @@ const Custom404 = () => {
     <Container maxW={"7xl"} className="hero__section" mb={[8, 4, 0]} pb={[24, 0, 0]}>
       <Navbar />
 
-      <Flex alignItems="center" gap={4} direction={["column-reverse", "column-reverse", "row"]} minH={"100vh"}>
+      <Flex alignItems="center" gap={4} minH={"100vh"}>
         <Flex direction="column" alignItems="center" justifyContent="center" w="100%">
-          <Box w={["80%", "50%", "30%"]} maxW="600px" minW="300px" textAlign="center">
+          <Box w={["80%", "60%", "60%"]} maxW="600px" minW="300px" textAlign="center">
             <FourNotFourIcon />
 
             <Button
