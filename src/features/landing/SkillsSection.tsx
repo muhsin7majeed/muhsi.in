@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useInView } from "framer-motion";
 import { FcInfo } from "react-icons/fc";
 import {
   Container,
@@ -28,10 +29,20 @@ interface SkillsGridPropTypes {
 }
 
 const SkillsGrid = ({ list, handleSkillSelection }: SkillsGridPropTypes) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <Grid gap={3} templateColumns="repeat(auto-fit, minmax(200px, 1fr))" width="100%">
-      {list?.map((skill) => (
-        <GridItem key={skill.name}>
+    <Grid gap={3} templateColumns="repeat(auto-fit, minmax(200px, 1fr))" width="100%" ref={ref}>
+      {list?.map((skill, index) => (
+        <GridItem
+          key={skill.name}
+          style={{
+            transform: isInView ? "none" : "translateY(100px)",
+            opacity: isInView ? 1 : 0,
+            transition: `all 1s ease ${index / 10}s`,
+          }}
+        >
           <SkillCard skill={skill} handleSkillSelection={handleSkillSelection} />
         </GridItem>
       ))}
@@ -48,13 +59,7 @@ const SkillsSection = () => {
 
   return (
     <>
-      <Modal
-        isOpen={Boolean(selectedSkill)}
-        onClose={handleClearSelection}
-        // isCentered
-        motionPreset="scale"
-        size="xl"
-      >
+      <Modal isOpen={Boolean(selectedSkill)} onClose={handleClearSelection} motionPreset="scale" size="xl">
         <ModalOverlay />
 
         {selectedSkill && (
@@ -69,7 +74,7 @@ const SkillsSection = () => {
 
             <ModalCloseButton />
 
-            <ModalBody py={4}>
+            <ModalBody py={4} overflow={'hidden'}>
               <SkillsGrid list={selectedSkill.subSkills} />
             </ModalBody>
           </ModalContent>

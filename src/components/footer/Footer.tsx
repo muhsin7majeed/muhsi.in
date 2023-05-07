@@ -10,13 +10,13 @@ const Footer = () => {
     >
       <Text fontSize={"sm"}>
         made with chakra ui, thanks to{" "}
-        <Link target="__blank" href="https://storyset.com/amico" textDecor={"underline"}>
+        <Link target="_blank" href="https://storyset.com/amico" textDecor={"underline"}>
           Storyset/amico
         </Link>{" "}
         for illustrations
       </Text>
 
-      <Link fontSize={"sm"} target="__blank" href="https://github.com/muhsin7majeed/muhsi.in" textDecor={"underline"}>
+      <Link fontSize={"sm"} target="_blank" href="https://github.com/muhsin7majeed/muhsi.in" textDecor={"underline"}>
         fork this repo
       </Link>
     </Box>

@@ -4,7 +4,7 @@ import { useInView } from "framer-motion";
 
 const TimelineIcon = (props: BoxProps) => {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
 
   return (
     <Box {...props} ref={ref}>
