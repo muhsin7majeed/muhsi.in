@@ -21,7 +21,7 @@ const Navbar = () => {
         _hover={{ color: "blackAlpha.700", bgColor: "initial" }}
         fontFamily={"poppins"}
       >
-        Muhsin
+        Muhsin A
       </Text>
 
       {/* <Button aria-label="Toggle dark Mode" onClick={toggleColorMode} variant={"ghost"}>

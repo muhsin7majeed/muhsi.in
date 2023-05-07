@@ -5,6 +5,7 @@ import type { AppProps } from "next/app";
 import { ChakraBaseProvider, extendTheme } from "@chakra-ui/react";
 
 import Footer from "@/components/footer/Footer";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
   const theme = extendTheme({
@@ -37,9 +38,21 @@ export default function App({ Component, pageProps }: AppProps) {
   });
 
   return (
-    <ChakraBaseProvider theme={theme} resetCSS>
-      <Component {...pageProps} />
-      <Footer />
-    </ChakraBaseProvider>
+    <>
+      <Head>
+        <title>Muhsin A | Frontend Developer | Portfolio</title>
+        <meta name="description" content="Hey there! I'm a frontend developer specialized in JavaScript." key="desc" />
+        <meta
+          name="keywords"
+          content="web developer, front-end developer, HTML, CSS, JavaScript, React, Node.js, TypScript, NextJs"
+        />
+        <meta name="robots" content="index, follow" />
+      </Head>
+
+      <ChakraBaseProvider theme={theme} resetCSS>
+        <Component {...pageProps} />
+        <Footer />
+      </ChakraBaseProvider>
+    </>
   );
 }

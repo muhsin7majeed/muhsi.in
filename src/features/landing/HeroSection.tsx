@@ -34,7 +34,7 @@ const HeroSection = () => {
             <Text as="span" ml="3" color="primary.500">
               Web Development:
             </Text>
-            <br /> Blending Design and Functionality to Perfection
+            <br /> Blending Design and Functionality to Perfection!
           </Heading>
 
           <Text
@@ -56,7 +56,7 @@ const HeroSection = () => {
             >
               make the world a better place
             </Link>
-            . Besides coding I love videogames, music and drawing.
+            . Besides coding I love videogames, music and traveling.
           </Text>
 
           <Flex alignItems="center" gap={4}>
