@@ -1,8 +1,10 @@
 import { Box } from "@chakra-ui/react";
-import HeroSection from "./HeroSection";
-import AboutMeSection from "./AboutMeSection";
-import SkillsSection from "./SkillsSection";
-import TestimonialsSection from "./TestimonialsSection";
+import dynamic from "next/dynamic";
+
+const HeroSection = dynamic(() => import("./HeroSection"));
+const AboutMeSection = dynamic(() => import("./AboutMeSection"));
+const SkillsSection = dynamic(() => import("./SkillsSection"));
+// const TestimonialsSection = dynamic(() => import("./TestimonialsSection"));
 
 export const LandingContainer = () => {
   return (
