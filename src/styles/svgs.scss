@@ -2,36 +2,43 @@
 /*                                HERO SECTION                                */
 /* -------------------------------------------------------------------------- */
 
-svg#freepik_stories-programming:not(.animated) .animable {
-  opacity: 0;
-}
-svg#freepik_stories-programming.animated #freepik--Floor--inject-67 {
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  animation-delay: 0s;
-}
-svg#freepik_stories-programming.animated #freepik--Shadows--inject-67 {
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  animation-delay: 0s;
-}
-svg#freepik_stories-programming.animated #freepik--Desk--inject-67 {
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
-  animation-delay: 0s;
-}
-svg#freepik_stories-programming.animated #freepik--Plant--inject-67 {
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  animation-delay: 0s;
-}
-svg#freepik_stories-programming.animated #freepik--Character--inject-67 {
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
-  animation-delay: 0s;
-}
-svg#freepik_stories-programming.animated #freepik--speech-bubble--inject-67 {
-  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown, 1.5s Infinite linear floating;
-  animation-delay: 0s, 1s;
-}
+.hero__section__svg {
+  #table,
+  #books,
+  #plant,
+  #computer,
+  #seat,
+  #code-icon,
+  #person {
+    opacity: 0;
+    animation-delay: 0s;
+  }
 
-.animator-hidden {
-  display: none;
+  #table {
+    animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  }
+
+  #plant {
+    animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  }
+
+  #computer {
+    animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  }
+
+  #person {
+    animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  }
+
+  #code-icon {
+    animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown, 1.5s Infinite linear floating;
+  }
+
+  #hey-there {
+    transform-origin: center;
+    animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft, 2s Infinite linear heartbeat;
+    animation-delay: 0s, 1s;
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -242,7 +249,7 @@ svg#freepik_stories-oops-404-error-with-a-broken-robot.animated #freepik--speech
     transform: scale(1);
   }
   10% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   30% {
     transform: scale(1);
@@ -251,7 +258,7 @@ svg#freepik_stories-oops-404-error-with-a-broken-robot.animated #freepik--speech
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   60% {
     transform: scale(1);
