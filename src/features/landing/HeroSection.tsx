@@ -4,6 +4,7 @@ import { Box, Button, Container, Flex, Heading, Img, Link, Text } from "@chakra-
 
 import Navbar from "@/components/navbar/Navbar";
 import HeroIcon from "@/components/svgs/HeroIcon";
+import SocialIcons from "@/components/svgs/SocialIcons";
 
 const HeroSection = () => {
   const ref = useRef(null);
@@ -88,6 +89,8 @@ const HeroSection = () => {
               Résumé
             </Button>
           </Flex>
+
+          <SocialIcons isInView={isInView} />
         </Flex>
 
         <Box w="100%">
