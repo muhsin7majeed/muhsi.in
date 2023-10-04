@@ -6,6 +6,7 @@ import { ChakraBaseProvider, extendTheme } from "@chakra-ui/react";
 
 import Footer from "@/components/footer/Footer";
 import Head from "next/head";
+import Navbar from "@/components/navbar/Navbar";
 
 export default function App({ Component, pageProps }: AppProps) {
   const theme = extendTheme({
@@ -50,6 +51,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <ChakraBaseProvider theme={theme} resetCSS>
+        <Navbar />
         <Component {...pageProps} />
         <Footer />
       </ChakraBaseProvider>

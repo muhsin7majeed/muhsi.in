@@ -102,7 +102,7 @@ function TestimonialCard(props: TestimonialCardProps) {
 
 const TestimonialsSection = () => {
   return (
-    <Container maxW={"7xl"} className="about_me__section" pb={24}>
+    <Container maxW={"7xl"} pb={24}>
       <Flex alignItems="center" gap={8} direction={["column-reverse", "column-reverse", "row"]}>
         <Box w="70%">
           <AboutMeIcon />

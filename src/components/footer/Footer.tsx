@@ -24,6 +24,7 @@ const TOOLS_USED = [
 const Footer = () => {
   return (
     <Box
+      as="footer"
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
       textAlign={"center"}

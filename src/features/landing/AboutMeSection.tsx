@@ -10,7 +10,7 @@ const AboutMeSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <Container maxW={"7xl"} className="about_me__section" pb={24}>
+    <Container maxW={"7xl"} pb={24} as="section">
       <Flex alignItems="center" gap={8} direction={["column-reverse", "column-reverse", "row"]}>
         <Box w="70%">
           <AboutMeIcon />

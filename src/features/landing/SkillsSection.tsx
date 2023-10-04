@@ -74,14 +74,14 @@ const SkillsSection = () => {
 
             <ModalCloseButton />
 
-            <ModalBody py={4} overflow={'hidden'}>
+            <ModalBody py={4} overflow={"hidden"}>
               <SkillsGrid list={selectedSkill.subSkills} />
             </ModalBody>
           </ModalContent>
         )}
       </Modal>
 
-      <Container maxW={"7xl"} className="skills__section" py={24} pos="relative">
+      <Container maxW={"7xl"} py={24} pos="relative" as="section">
         <Flex alignItems="center" gap={8} direction={["column-reverse", "column-reverse", "row"]}>
           <Flex direction="column" alignItems={["center", "center", "start"]} justifyContent="center" w="100%">
             <Heading fontSize={"4xl"}>What do I know?</Heading>

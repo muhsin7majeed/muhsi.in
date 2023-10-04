@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { Box, Button, Container, Flex, Heading, Img, Link, Text } from "@chakra-ui/react";
 
-import Navbar from "@/components/navbar/Navbar";
 import HeroIcon from "@/components/svgs/HeroIcon";
 import SocialIcons from "@/components/svgs/SocialIcons";
 
@@ -11,9 +10,7 @@ const HeroSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <Container maxW={"7xl"} className="hero__section" mb={[8, 4, 0]} pb={[24, 0, 0]}>
-      <Navbar />
-
+    <Container maxW={"7xl"} mb={[8, 4, 0]} pb={[24, 0, 0]} as="section">
       <Flex
         alignItems="center"
         gap={4}

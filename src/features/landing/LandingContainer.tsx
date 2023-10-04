@@ -9,7 +9,7 @@ const SkillsSection = dynamic(() => import("./SkillsSection"));
 export const LandingContainer = () => {
   return (
     <>
-      <Box paddingBottom={24}>
+      <Box paddingBottom={24} as="main">
         <HeroSection />
         <AboutMeSection />
         <SkillsSection />
