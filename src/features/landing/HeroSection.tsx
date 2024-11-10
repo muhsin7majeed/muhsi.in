@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import { Box, Button, Container, Flex, Heading, Img, Link, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Heading, Link, Text } from "@chakra-ui/react";
 
 import HeroIcon from "@/components/svgs/HeroIcon";
 import SocialIcons from "@/components/svgs/SocialIcons";
@@ -28,9 +28,8 @@ const HeroSection = () => {
               transition: "all 1s ease 0.5s",
             }}
           >
-            The Art of
-            <Text as="span" ml="3" color="primary.500">
-              Web Development:
+            <Text as="span" color="primary.500">
+              Engineering the Web:
             </Text>
             <br /> Blending Design and Functionality to Perfection!
           </Heading>
@@ -44,17 +43,19 @@ const HeroSection = () => {
               transition: "all 1s ease 0.5s",
             }}
           >
-            I’m a web dev specialized in JavaScript. I’m just swimming through endless libraries and frameworks of
-            javascript to find something that can{" "}
-            <Link
-              textDecoration={"underline"}
-              color="primary.500"
-              target="_blank"
-              href="https://www.youtube.com/watch?v=B8C5sjjhsso"
-            >
-              make the world a better place
-            </Link>
-            . Besides coding I love videogames, music and traveling.
+            Hey there! I'm{" "}
+            <Text as="span" fontWeight="medium" color="primary.500">
+              Muhsin
+            </Text>
+            , a{" "}
+            <Text as="span" fontWeight="medium" color="primary.500">
+              Frontend Engineer
+            </Text>{" "}
+            from Bangalore, India. I'm specialized in{" "}
+            <Text as="span" fontWeight="medium" color="primary.500">
+              React & JavaScript
+            </Text>
+            .
           </Text>
 
           <Flex alignItems="center" gap={4}>

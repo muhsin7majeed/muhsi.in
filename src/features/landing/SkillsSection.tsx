@@ -84,7 +84,7 @@ const SkillsSection = () => {
       <Container maxW={"7xl"} py={24} pos="relative" as="section">
         <Flex alignItems="center" gap={8} direction={["column-reverse", "column-reverse", "row"]}>
           <Flex direction="column" alignItems={["center", "center", "start"]} justifyContent="center" w="100%">
-            <Heading fontSize={"4xl"}>What do I know?</Heading>
+            <Heading fontSize={"4xl"}>Tools I'm familiar with</Heading>
 
             <Text mt={4} mb={8} textAlign={["center", "center", "start"]}>
               Hint: Click on a card with a <Icon as={FcInfo} verticalAlign="middle" /> icon to learn more about related

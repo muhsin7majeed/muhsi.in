@@ -1,13 +1,16 @@
-import { Container, Flex, Text, useColorModeValue } from "@chakra-ui/react";
+import { Container, Flex, Text } from "@chakra-ui/react";
 import Link from "next/link";
+import RocketLaunch from "../RocketLaunch";
 
 const Navbar = () => {
+  // const { colorMode, toggleColorMode } = useColorMode();
+
   return (
-    <Container maxW={"7xl"} className="hero__section" mb={[8, 4, 0]} pb={[24, 0, 0]} as="nav">
+    <Container maxW={"7xl"} mb={[8, 4, 0]} pb={[24, 0, 0]} as="nav">
       <Flex
         py={[4, 8, 8]}
-        borderBottom={"2px solid"}
-        borderColor={useColorModeValue("gray.100", "gray.700")}
+        borderBottom={"2px dashed"}
+        borderColor={"gray.100"}
         justifyContent={"space-between"}
         alignItems="center"
       >
@@ -15,12 +18,15 @@ const Navbar = () => {
           fontSize={22}
           as={Link}
           href="/"
-          fontWeight={"black"}
+          fontWeight={"semibold"}
           _hover={{ color: "blackAlpha.700", bgColor: "initial" }}
-          fontFamily={"poppins"}
         >
           Muhsin A
         </Text>
+
+        {/* <Button onClick={toggleColorMode}>Toggle {colorMode === "light" ? "Dark" : "Light"}</Button> */}
+
+        <RocketLaunch />
       </Flex>
     </Container>
   );

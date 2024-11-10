@@ -2,8 +2,8 @@ import { Box } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 
 const HeroSection = dynamic(() => import("./HeroSection"));
-const AboutMeSection = dynamic(() => import("./AboutMeSection"));
 const SkillsSection = dynamic(() => import("./SkillsSection"));
+const Experiences = dynamic(() => import("./Experiences/Experiences"));
 // const TestimonialsSection = dynamic(() => import("./TestimonialsSection"));
 
 export const LandingContainer = () => {
@@ -11,7 +11,7 @@ export const LandingContainer = () => {
     <>
       <Box paddingBottom={24} as="main">
         <HeroSection />
-        <AboutMeSection />
+        <Experiences />
         <SkillsSection />
         {/* <TestimonialsSection /> */}
       </Box>

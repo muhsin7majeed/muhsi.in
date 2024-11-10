@@ -14,21 +14,13 @@ import {
   SiExpress,
   SiSocketdotio,
   SiJest,
-  SiAxios,
   SiApollographql,
   SiGraphql,
   SiMysql,
   SiPostgresql,
 } from "react-icons/si";
-import { BsBootstrap, BsCalendar2Date } from "react-icons/bs";
-import {
-  AiFillGithub,
-  AiFillGitlab,
-  AiFillPieChart,
-  AiOutlineClockCircle,
-  AiOutlineDatabase,
-  AiOutlineForm,
-} from "react-icons/ai";
+import { BsBootstrap } from "react-icons/bs";
+import { AiFillGithub, AiFillGitlab, AiFillPieChart, AiOutlineDatabase, AiOutlineForm } from "react-icons/ai";
 import { TbBrandMongodb, TbBrandStorybook } from "react-icons/tb";
 
 import { Skill } from "@/types/Skills";
@@ -48,6 +40,7 @@ const SKILLS_LIST: Skill[] = [
       { name: "Framer Motion", color: "#000000", icon: SiFramer },
       { name: "React Query", color: "#f15d35", icon: SiReactquery },
       { name: "Apollo GraphQL", color: "#311c87", icon: SiApollographql },
+      { name: "ChartJs", color: "#fe777b", icon: AiFillPieChart },
     ],
   },
   {
@@ -59,19 +52,14 @@ const SKILLS_LIST: Skill[] = [
     name: "JavaScript",
     icon: DiJavascript1,
     color: "#F0DB4F",
-    subSkills: [
-      { name: "ChartJs", color: "#fe777b", icon: AiFillPieChart },
-      { name: "MomentJs", color: "#1f1f1f", icon: AiOutlineClockCircle },
-      { name: "Jest", color: "#15c213", icon: SiJest },
-      { name: "Axios", color: "#671ddf", icon: SiAxios },
-    ],
+    subSkills: [],
   },
   {
     name: "TypeScript",
     icon: SiTypescript,
     color: "#007acc",
   },
-
+  { name: "Jest", color: "#15c213", icon: SiJest },
   {
     name: "Angular 2+",
     icon: DiAngularSimple,
