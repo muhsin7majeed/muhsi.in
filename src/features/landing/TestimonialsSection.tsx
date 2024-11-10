@@ -11,8 +11,6 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import AboutMeIcon from "@/components/svgs/AboutMeIcon";
-
 const testimonials = [
   {
     name: "Brandon P.",
@@ -104,9 +102,7 @@ const TestimonialsSection = () => {
   return (
     <Container maxW={"7xl"} pb={24}>
       <Flex alignItems="center" gap={8} direction={["column-reverse", "column-reverse", "row"]}>
-        <Box w="70%">
-          <AboutMeIcon />
-        </Box>
+        <Box w="70%"></Box>
 
         <Flex direction="column" alignItems="start" justifyContent="center" w="100%">
           <Heading fontSize={"4xl"} mb={4}>
