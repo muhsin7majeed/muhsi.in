@@ -3,10 +3,12 @@ import "@/styles/svgs.scss";
 
 import type { AppProps } from "next/app";
 import { ChakraBaseProvider, extendTheme } from "@chakra-ui/react";
+import { DefaultSeo } from 'next-seo';
 
 import Footer from "@/components/footer/Footer";
-import Head from "next/head";
 import Navbar from "@/components/navbar/Navbar";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { defaultSEOConfig } from "@/config/seo";
 
 export default function App({ Component, pageProps }: AppProps) {
   const theme = extendTheme({
@@ -40,16 +42,8 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Head>
-        <title>Muhsin A | Frontend Developer | Portfolio</title>
-        <meta name="description" content="Hey there! I'm a frontend developer specialized in JavaScript." key="desc" />
-        <meta
-          name="keywords"
-          content="web developer, front-end developer, HTML, CSS, JavaScript, React, Node.js, TypScript, NextJs"
-        />
-        <meta name="robots" content="index, follow" />
-      </Head>
-
+      <DefaultSeo {...defaultSEOConfig} />
+      <GoogleAnalytics GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_ID} />
       <ChakraBaseProvider theme={theme} resetCSS>
         <Navbar />
         <Component {...pageProps} />
