@@ -14,7 +14,7 @@ export const defaultSEOConfig: DefaultSeoProps = {
     description: 'Frontend Engineer from Bangalore, India specializing in React, JavaScript, TypeScript, and modern web technologies. Building beautiful, functional web experiences.',
     images: [
       {
-        url: 'https://muhsi.in/og-image.png',
+        url: 'https://muhsi.in/assets/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Muhsin A - Frontend Engineer Portfolio',
