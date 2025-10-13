@@ -4,9 +4,11 @@ const nextConfig = {
   trailingSlash: false,
   poweredByHeader: false,
   compress: true,
+  output: "export",
   images: {
     domains: ["muhsi.in"],
     formats: ["image/webp", "image/avif"],
+    unoptimized: true, // Required for static export
   },
   // Only add headers when not doing static export (for GitHub Pages)
   ...(process.env.NODE_ENV !== "production" || process.env.GITHUB_ACTIONS
