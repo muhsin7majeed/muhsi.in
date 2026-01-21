@@ -2,6 +2,7 @@ import { SiReact, SiTypescript, SiPixiv } from "react-icons/si";
 import { DiJavascript1, DiHtml5, DiCss3 } from "react-icons/di";
 
 import { Project } from "@/types/Project";
+import { AiOutlineApi } from "react-icons/ai";
 
 const PROJECTS_DATA: Project[] = [
   {
@@ -30,6 +31,19 @@ const PROJECTS_DATA: Project[] = [
       { name: "JavaScript", icon: DiJavascript1, color: "#F0DB4F" },
       { name: "HTML5", icon: DiHtml5, color: "#e34c26" },
       { name: "CSS3", icon: DiCss3, color: "#264de4" },
+    ],
+  },
+  {
+    id: 3,
+    title: "Genre.live",
+    description:
+      "Simple music genre finder with Fast.fm API. No login, no paywall, no ads & no tracking.",
+    image: "/assets/genre.live.png",
+    githubUrl: "https://github.com/muhsin7majeed/genre.live",
+    websiteUrl: "https://gl.muhsi.in/",
+    technologies: [
+      { name: "VanillaJs", icon: DiJavascript1, color: "#F0DB4F" },
+      { name: "Fast.fm API", icon: AiOutlineApi, color: "#007acc" },
     ],
   },
 ];

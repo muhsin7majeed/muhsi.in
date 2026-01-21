@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <DefaultSeo {...defaultSEOConfig} />
       <GoogleAnalytics GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_ID} />
-      <ChakraBaseProvider theme={theme} resetCSS>
+      <ChakraBaseProvider theme={theme} >
         <Navbar />
         <Component {...pageProps} />
         <Footer />
