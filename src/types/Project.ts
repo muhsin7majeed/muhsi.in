@@ -7,7 +7,7 @@ export interface Project {
   image: string;
   githubUrl: string;
   websiteUrl: string;
-  technologies: {
+  tags: {
     name: string;
     icon: IconType;
     color: string;

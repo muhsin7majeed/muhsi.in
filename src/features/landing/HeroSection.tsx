@@ -1,6 +1,14 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import { Box, Button, Container, Flex, Heading, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  Heading,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 
 import HeroIcon from "@/components/svgs/HeroIcon";
 import SocialIcons from "@/components/svgs/SocialIcons";
@@ -18,7 +26,12 @@ const HeroSection = () => {
         minH={"100vh"}
         ref={ref}
       >
-        <Flex direction="column" alignItems="start" justifyContent="center" w="100%">
+        <Flex
+          direction="column"
+          alignItems="start"
+          justifyContent="center"
+          w="100%"
+        >
           <Heading
             fontSize={"4xl"}
             mb={4}
@@ -28,10 +41,10 @@ const HeroSection = () => {
               transition: "all 1s ease 0.5s",
             }}
           >
-            <Text as="span" color="primary.500">
-              Engineering the Web:
+            <Text as="span" color="primary.500" me="3">
+              Little bit of this,
             </Text>
-            <br /> Blending Design and Functionality to Perfection!
+            and little bit of that.
           </Heading>
 
           <Text
@@ -51,7 +64,7 @@ const HeroSection = () => {
             <Text as="span" fontWeight="medium" color="primary.500">
               Frontend Engineer
             </Text>{" "}
-            from Bangalore, India. I'm specialized in{" "}
+            from Kerala, India. I'm specialized in{" "}
             <Text as="span" fontWeight="medium" color="primary.500">
               React & JavaScript
             </Text>

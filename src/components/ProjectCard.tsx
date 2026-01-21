@@ -12,6 +12,7 @@ import {
   Badge,
   IconButton,
   Tooltip,
+  Flex,
 } from "@chakra-ui/react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
@@ -42,6 +43,8 @@ const ProjectCard = ({ project, index }: ProjectCardPropTypes) => {
         opacity: isInView ? 1 : 0,
         transition: `all 1s ease ${index / 10}s`,
       }}
+      // maxW="300px"
+      // width="100%"
     >
       {/* Project Image */}
       <Box position="relative" overflow="hidden">
@@ -117,15 +120,12 @@ const ProjectCard = ({ project, index }: ProjectCardPropTypes) => {
           {project.description}
         </Text>
 
-        {/* Technologies */}
+        {/* Tags */}
         <Box>
-          <Text fontSize="sm" fontWeight="semibold" color="gray.700" mb={2}>
-            Technologies Used:
-          </Text>
-          <HStack spacing={2} flexWrap="wrap">
-            {project.technologies.map((tech) => (
+          <Flex flexWrap="wrap" gap={2}>
+            {project.tags.map((tag) => (
               <Badge
-                key={tech.name}
+                key={tag.name}
                 colorScheme="gray"
                 variant="subtle"
                 px={2}
@@ -135,11 +135,11 @@ const ProjectCard = ({ project, index }: ProjectCardPropTypes) => {
                 alignItems="center"
                 gap={1}
               >
-                <Icon as={tech.icon} color={tech.color} fontSize="sm" />
-                {tech.name}
+                <Icon as={tag.icon} color={tag.color} fontSize="sm" />
+                {tag.name}
               </Badge>
             ))}
-          </HStack>
+          </Flex>
         </Box>
       </Box>
     </Card>
