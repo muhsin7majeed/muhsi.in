@@ -62,7 +62,7 @@ const PROJECTS_DATA: Project[] = [
     title: "What to watch (alpha)",
     description:
       "A privacy-focused movie and TV show tracker that doesn't sell your viewing habits to advertisers. Track what you've watched, save what you want to see, and actually own your data.",
-    image: "/assets/genre.live.png",
+    image: "/assets/wtw-landing.png",
     githubUrl: "https://github.com/muhsin7majeed/what-to-watch-web",
     websiteUrl: "https://wtw.muhsi.in/",
     tags: [
