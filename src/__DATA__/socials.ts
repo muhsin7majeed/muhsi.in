@@ -17,12 +17,6 @@ const SOCIAL_LINKS: SocialLink[] = [
     color: "#161b22",
   },
   {
-    name: "Instagram",
-    link: "https://www.instagram.com/muhsin7majeed/",
-    icon: SiInstagram,
-    color: "#c838aa",
-  },
-  {
     name: "Mastodon",
     link: "https://mastodon.social/@unbaked_potato",
     icon: SiMastodon,
