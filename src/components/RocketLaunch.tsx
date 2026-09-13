@@ -51,6 +51,10 @@ const RocketLaunch = () => {
           color="primary.500"
           variant="ghost"
           aria-label="Launch rocket"
+          transition="transform 0.2s ease, filter 0.2s ease"
+          _hover={{ transform: "translateY(-2px) rotate(-10deg)", filter: "drop-shadow(0 0 5px currentColor)" }}
+          _active={{ transform: "translateY(0) scale(0.9)" }}
+          sx={{ "@media (prefers-reduced-motion: reduce)": { transition: "none" } }}
           icon={<MdRocketLaunch />}
         />
       )}

@@ -1,8 +1,15 @@
 import { Box, Flex, chakra, useColorModeValue } from "@chakra-ui/react";
 
-const LineWithCircle = () => {
+interface LineWithCircleProps {
+  isVisible: boolean;
+  isCurrent: boolean;
+  reduceMotion: boolean;
+}
+
+const LineWithCircle = ({ isVisible, isCurrent, reduceMotion }: LineWithCircleProps) => {
   const lineColor = useColorModeValue("gray.200", "gray.600");
   const circleBackground = useColorModeValue("white", "gray.800");
+
   return (
     <Flex pos="relative" alignItems="center" mr="40px">
       <chakra.span
@@ -12,6 +19,9 @@ const LineWithCircle = () => {
         border="1px solid"
         borderColor={lineColor}
         top="0px"
+        transform={isVisible ? "scaleY(1)" : "scaleY(0)"}
+        transformOrigin="top"
+        transition={reduceMotion ? "none" : "transform 0.45s ease"}
       />
 
       <Box pos="relative" p="10px">
@@ -31,7 +41,10 @@ const LineWithCircle = () => {
           border="3px solid"
           borderColor="primary.500"
           backgroundImage="none"
-          opacity={1}
+          opacity={isVisible ? 1 : 0}
+          transform={isVisible ? "scale(1)" : "scale(0.5)"}
+          transition={reduceMotion ? "none" : "transform 0.3s ease 0.15s, opacity 0.3s ease 0.15s"}
+          animation={isCurrent && isVisible && !reduceMotion ? "timelinePulse 2.8s ease-in-out infinite" : undefined}
         />
       </Box>
     </Flex>

@@ -1,10 +1,12 @@
 import { Container, Flex, HStack, IconButton, Text, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import RocketLaunch from "../RocketLaunch";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+  const shouldReduceMotion = useReducedMotion();
   const borderColor = useColorModeValue("gray.100", "gray.700");
   const hoverColor = useColorModeValue("blackAlpha.700", "whiteAlpha.700");
 
@@ -33,7 +35,23 @@ const Navbar = () => {
             fontSize={24}
             variant="ghost"
             aria-label={`Switch to ${colorMode === "light" ? "dark" : "light"} mode`}
-            icon={colorMode === "light" ? <MdDarkMode /> : <MdLightMode />}
+            transition="transform 0.2s ease, background-color 0.2s ease"
+            _hover={{ transform: "translateY(-1px)" }}
+            _active={{ transform: "scale(0.92)" }}
+            icon={
+              <AnimatePresence initial={false} mode="wait">
+                <motion.span
+                  key={colorMode}
+                  initial={shouldReduceMotion ? false : { opacity: 0, rotate: -45, scale: 0.8 }}
+                  animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                  exit={shouldReduceMotion ? undefined : { opacity: 0, rotate: 45, scale: 0.8 }}
+                  transition={{ duration: 0.16 }}
+                  style={{ display: "flex" }}
+                >
+                  {colorMode === "light" ? <MdDarkMode /> : <MdLightMode />}
+                </motion.span>
+              </AnimatePresence>
+            }
           />
           <RocketLaunch />
         </HStack>

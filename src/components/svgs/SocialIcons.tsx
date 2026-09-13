@@ -1,4 +1,5 @@
 import { HStack, Icon, Link } from "@chakra-ui/react";
+import { motion, useReducedMotion } from "framer-motion";
 
 import SOCIAL_LINKS from "@/__DATA__/socials";
 
@@ -7,33 +8,50 @@ interface SocialIconsPropTypes {
 }
 
 const SocialIcons = ({ isInView }: SocialIconsPropTypes) => {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <>
       <HStack my={4} gap={3}>
         {SOCIAL_LINKS.map((item, index) => (
-          <Link
+          <motion.div
             key={item.name}
-            href={item.link}
-            display="inline-block"
-            isExternal
-            aria-label={item.name}
-            style={{
-              transform: isInView ? "none" : "translateY(300px)",
-              opacity: isInView ? 1 : 0,
-              transition: `transform 1s ease ${index / 10}s, opacity 1s ease ${index / 10}s`,
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
+            animate={{
+              opacity: shouldReduceMotion || isInView ? 1 : 0,
+              y: shouldReduceMotion || isInView ? 0 : 20,
             }}
+            transition={{ duration: 0.4, delay: 0.26 + index * 0.05, ease: "easeOut" }}
           >
-            <Icon
-              fontSize="3xl"
-              as={item.icon}
-              color={item.color}
-              _dark={{ color: item.darkColor ?? item.color }}
-              transition="transform .2s ease"
+            <Link
+              href={item.link}
+              display="flex"
+              isExternal
+              aria-label={item.name}
+              borderRadius="md"
+              transition="transform 0.2s ease"
               _hover={{
-                transform: "scale(1.5)",
+                transform: "translateY(-2px)",
+                ".social-icon": { transform: `scale(1.12) rotate(${index % 2 === 0 ? -3 : 3}deg)` },
               }}
-            />
-          </Link>
+              _active={{ transform: "translateY(0) scale(0.96)" }}
+              _focusVisible={{
+                outline: "2px solid",
+                outlineColor: "primary.500",
+                outlineOffset: "3px",
+                ".social-icon": { transform: `scale(1.12) rotate(${index % 2 === 0 ? -3 : 3}deg)` },
+              }}
+            >
+              <Icon
+                className="social-icon"
+                fontSize="3xl"
+                as={item.icon}
+                color={item.color}
+                _dark={{ color: item.darkColor ?? item.color }}
+                transition="transform 0.2s ease"
+              />
+            </Link>
+          </motion.div>
         ))}
       </HStack>
     </>

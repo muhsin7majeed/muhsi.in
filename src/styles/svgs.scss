@@ -21,6 +21,11 @@ html[data-theme="dark"] svg.animated .svg-screen-content {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  svg[id^="freepik_stories-"] .animable {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+
   html[data-theme="dark"] svg.animated .svg-screen-surface,
   html[data-theme="dark"] svg.animated .svg-screen-content {
     animation: none;

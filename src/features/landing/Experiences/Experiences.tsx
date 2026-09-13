@@ -30,7 +30,7 @@ const Experiences = () => {
             </Box>
           </TimeLineItem>
 
-          <TimeLineItem>
+          <TimeLineItem isCurrent>
             <Box>
               <chakra.h2 fontSize={["md", null, "lg"]}>Nov 2021 - Present</chakra.h2>
 
