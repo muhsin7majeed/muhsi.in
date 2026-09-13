@@ -16,6 +16,38 @@ import { ImEarth } from "react-icons/im";
 
 const PROJECTS_DATA: Project[] = [
   {
+    id: 4,
+    title: "Kadha.org",
+    description:
+      "A privacy-focused movie and TV show tracker that doesn't sell your viewing habits to advertisers. Track what you've watched, save what you want to see, and actually own your data.",
+    image: "/assets/kadha-landing.png",
+    githubUrl: "https://github.com/muhsin7majeed/kadha",
+    websiteUrl: "https://kadha.org/",
+    tags: [
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "ChakraUI", icon: SiChakraui, color: "#319795" },
+      { name: "NodeJS", icon: SiNodedotjs, color: "#339933" },
+      { name: "SQLite", icon: SiSqlite, color: "#003B57" },
+      { name: "Open-source", icon: ImEarth, color: "#4CAF50" },
+    ],
+  },
+  {
+    id: 5,
+    title: "Realms",
+    description:
+      "A customizable Astro portfolio with multiple independently art-directed themes, each with its own layout, visuals, and motion.",
+    image: "/assets/realms.png",
+    githubUrl: "https://github.com/muhsin7majeed/realms",
+    websiteUrl: "https://muhsin7majeed.github.io/realms/",
+    tags: [
+      { name: "Astro", icon: SiAstro, color: "#FF5D01" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "GSAP", icon: SiGreensock, color: "#88CE02" },
+      { name: "Open-source", icon: ImEarth, color: "#4CAF50" },
+    ],
+  },
+  {
     id: 1,
     title: "World's on Fire",
     description:
@@ -56,38 +88,6 @@ const PROJECTS_DATA: Project[] = [
     tags: [
       { name: "VanillaJs", icon: DiJavascript1, color: "#F7DF1E" },
       { name: "Fast.fm API", icon: AiOutlineApi, color: "#D51007" },
-      { name: "Open-source", icon: ImEarth, color: "#4CAF50" },
-    ],
-  },
-  {
-    id: 4,
-    title: "Kadha.org",
-    description:
-      "A privacy-focused movie and TV show tracker that doesn't sell your viewing habits to advertisers. Track what you've watched, save what you want to see, and actually own your data.",
-    image: "/assets/kadha-landing.png",
-    githubUrl: "https://github.com/muhsin7majeed/kadha",
-    websiteUrl: "https://kadha.org/",
-    tags: [
-      { name: "React", icon: SiReact, color: "#61DAFB" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "ChakraUI", icon: SiChakraui, color: "#319795" },
-      { name: "NodeJS", icon: SiNodedotjs, color: "#339933" },
-      { name: "SQLite", icon: SiSqlite, color: "#003B57" },
-      { name: "Open-source", icon: ImEarth, color: "#4CAF50" },
-    ],
-  },
-  {
-    id: 5,
-    title: "Realms",
-    description:
-      "A customizable Astro portfolio with multiple independently art-directed themes, each with its own layout, visuals, and motion.",
-    image: "/assets/realms.png",
-    githubUrl: "https://github.com/muhsin7majeed/realms",
-    websiteUrl: "https://muhsin7majeed.github.io/realms/",
-    tags: [
-      { name: "Astro", icon: SiAstro, color: "#FF5D01" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "GSAP", icon: SiGreensock, color: "#88CE02" },
       { name: "Open-source", icon: ImEarth, color: "#4CAF50" },
     ],
   },
