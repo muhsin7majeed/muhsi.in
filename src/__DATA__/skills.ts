@@ -37,7 +37,7 @@ const SKILLS_LIST: Skill[] = [
       { name: "Formik", color: "#004ec7", icon: AiOutlineForm },
       { name: "Styled Components", color: "#ef69d3", icon: SiStyledcomponents },
       { name: "Storybook", color: "#ff4785", icon: TbBrandStorybook },
-      { name: "Framer Motion", color: "#000000", icon: SiFramer },
+      { name: "Framer Motion", color: "#000000", darkColor: "#f5f5f5", icon: SiFramer },
       { name: "React Query", color: "#f15d35", icon: SiReactquery },
       { name: "Apollo GraphQL", color: "#311c87", icon: SiApollographql },
       { name: "ChartJs", color: "#fe777b", icon: AiFillPieChart },
@@ -46,6 +46,7 @@ const SKILLS_LIST: Skill[] = [
   {
     name: "NextJs",
     color: "#333",
+    darkColor: "#f5f5f5",
     icon: SiNextdotjs,
   },
   {
@@ -90,8 +91,9 @@ const SKILLS_LIST: Skill[] = [
     name: "GIT",
     icon: DiGitBranch,
     color: "#333",
+    darkColor: "#f5f5f5",
     subSkills: [
-      { name: "GitHub", color: "#24292f", icon: AiFillGithub },
+      { name: "GitHub", color: "#24292f", darkColor: "#f0f6fc", icon: AiFillGithub },
       { name: "GitLab", color: "#e24329", icon: AiFillGitlab },
       { name: "Azure DevOps", color: "#0072cf", icon: SiAzuredevops },
     ],
@@ -111,14 +113,15 @@ const SKILLS_LIST: Skill[] = [
     icon: SiNodedotjs,
     color: "#70a561",
     subSkills: [
-      { name: "ExpressJs", color: "#010101", icon: SiExpress },
-      { name: "Socket.IO", color: "#010101", icon: SiSocketdotio },
+      { name: "ExpressJs", color: "#010101", darkColor: "#f5f5f5", icon: SiExpress },
+      { name: "Socket.IO", color: "#010101", darkColor: "#f5f5f5", icon: SiSocketdotio },
     ],
   },
   {
     name: "Databases",
     icon: AiOutlineDatabase,
     color: "#333",
+    darkColor: "#f5f5f5",
     subSkills: [
       { name: "MySQL", color: "#dd8a00", icon: SiMysql },
       { name: "MongoDB", color: "#116149", icon: TbBrandMongodb },

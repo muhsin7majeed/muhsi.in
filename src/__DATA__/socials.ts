@@ -1,7 +1,7 @@
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 import { SocialLink } from "@/types/socials";
-import { SiInstagram, SiMastodon, SiMatrix } from "react-icons/si";
+import { SiMastodon, SiMatrix } from "react-icons/si";
 
 const SOCIAL_LINKS: SocialLink[] = [
   {
@@ -15,6 +15,7 @@ const SOCIAL_LINKS: SocialLink[] = [
     link: "https://github.com/muhsin7majeed/",
     icon: FiGithub,
     color: "#161b22",
+    darkColor: "#f0f6fc",
   },
   {
     name: "Mastodon",
@@ -26,7 +27,8 @@ const SOCIAL_LINKS: SocialLink[] = [
     name: "Matrix",
     link: "https://matrix.to/#/@0x0002:matrix.org",
     icon: SiMatrix,
-    color: "#000000", //
+    color: "#000000",
+    darkColor: "#ffffff",
   },
 ];
 

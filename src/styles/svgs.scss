@@ -1,4 +1,37 @@
 /* -------------------------------------------------------------------------- */
+/*                              DARK MODE DETAILS                             */
+/* -------------------------------------------------------------------------- */
+
+html[data-theme="dark"] svg [id^="freepik--floor--"] {
+  fill: var(--chakra-colors-gray-800) !important;
+}
+
+html[data-theme="dark"] svg [id^="freepik--Shadow--"],
+html[data-theme="dark"] svg [id^="freepik--shadow--"] {
+  fill: var(--chakra-colors-gray-900) !important;
+}
+
+html[data-theme="dark"] svg.animated .svg-screen-surface {
+  animation: screenGlow 3s ease-in-out infinite;
+}
+
+html[data-theme="dark"] svg.animated .svg-screen-content {
+  animation: screenBoot 900ms steps(1, end) both;
+  filter: brightness(1.12) saturate(1.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="dark"] svg.animated .svg-screen-surface,
+  html[data-theme="dark"] svg.animated .svg-screen-content {
+    animation: none;
+  }
+
+  html[data-theme="dark"] svg.animated .svg-screen-surface {
+    filter: drop-shadow(0 0 5px rgba(186, 104, 200, 0.65));
+  }
+}
+
+/* -------------------------------------------------------------------------- */
 /*                                HERO SECTION                                */
 /* -------------------------------------------------------------------------- */
 
@@ -145,6 +178,39 @@ svg#freepik_stories-oops-404-error-with-a-broken-robot.animated #freepik--speech
 /* -------------------------------------------------------------------------- */
 /*                                  KEYFRAMES                                 */
 /* -------------------------------------------------------------------------- */
+
+@keyframes screenBoot {
+  0%,
+  12% {
+    opacity: 0;
+    filter: brightness(0.2);
+  }
+  13%,
+  28% {
+    opacity: 0.85;
+    filter: brightness(1.5) saturate(1.2);
+  }
+  29%,
+  42% {
+    opacity: 0.2;
+    filter: brightness(0.5);
+  }
+  43%,
+  100% {
+    opacity: 1;
+    filter: brightness(1.12) saturate(1.1);
+  }
+}
+
+@keyframes screenGlow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 3px rgba(186, 104, 200, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 9px rgba(50, 223, 236, 0.75));
+  }
+}
 
 @keyframes slideUp {
   0% {

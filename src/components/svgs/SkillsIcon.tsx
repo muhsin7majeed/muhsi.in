@@ -810,7 +810,7 @@ const SkillsIcon = (props: BoxProps) => {
                 transformOrigin: "215.405px 200.05px",
               }}
               id="elhyf3cx3bhck"
-              className="animable"
+              className="animable svg-screen-surface"
             />
             <g id="el7mm7ek472s">
               <path
@@ -894,7 +894,7 @@ const SkillsIcon = (props: BoxProps) => {
           </g>
           <g
             id="freepik--Window--inject-16--inject-39"
-            className="animable"
+            className="animable svg-screen-content"
             style={{ transformOrigin: "216.144px 200.185px" }}
           >
             <path

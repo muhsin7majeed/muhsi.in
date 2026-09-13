@@ -16,6 +16,7 @@ const SocialIcons = ({ isInView }: SocialIconsPropTypes) => {
             href={item.link}
             display="inline-block"
             isExternal
+            aria-label={item.name}
             style={{
               transform: isInView ? "none" : "translateY(300px)",
               opacity: isInView ? 1 : 0,
@@ -26,6 +27,7 @@ const SocialIcons = ({ isInView }: SocialIconsPropTypes) => {
               fontSize="3xl"
               as={item.icon}
               color={item.color}
+              _dark={{ color: item.darkColor ?? item.color }}
               transition="transform .2s ease"
               _hover={{
                 transform: "scale(1.5)",

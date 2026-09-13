@@ -335,7 +335,7 @@ const HeroIcon = (props: BoxProps) => {
                     transformOrigin: "332.025px 134.484px",
                   }}
                   id="elelm8trjb7p5"
-                  className="animable"
+                  className="animable svg-screen-surface"
                 />
                 <g id="el4wd0gplnqen">
                   <path
@@ -368,7 +368,11 @@ const HeroIcon = (props: BoxProps) => {
                 />
               </g>
             </g>
-            <g id="freepik--Window--inject-67" className="animable" style={{ transformOrigin: "360.53px 124.413px" }}>
+            <g
+              id="freepik--Window--inject-67"
+              className="animable svg-screen-content"
+              style={{ transformOrigin: "360.53px 124.413px" }}
+            >
               <g id="freepik--window--inject-67" className="animable" style={{ transformOrigin: "360.53px 124.413px" }}>
                 <path
                   d="M292.75,39.53a1.13,1.13,0,0,1,0-.18.08.08,0,0,1,0,0,.84.84,0,0,1,0-.17.8.8,0,0,1,.11-.25.33.33,0,0,1,.06-.1l.06-.07a.8.8,0,0,1,.13-.13h0a1,1,0,0,1,.17-.1,1.43,1.43,0,0,1,1.31.17l129.18,74.54a4.35,4.35,0,0,1,1.95,3.39v93.49h0v.43a1.33,1.33,0,0,1-.7,1.17l-.09.06-.1.06-.17,0a1,1,0,0,1-.25,0,1.29,1.29,0,0,1-.64-.19l-.05,0h0L422,210.6,294.69,137.12a4.32,4.32,0,0,1-1.95-3.38v-94C292.74,39.69,292.75,39.61,292.75,39.53Z"

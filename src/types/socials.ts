@@ -5,4 +5,5 @@ export interface SocialLink {
   link: string;
   icon: IconType;
   color: string;
+  darkColor?: string;
 }

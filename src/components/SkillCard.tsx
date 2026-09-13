@@ -37,7 +37,7 @@ const SkillCard = ({ skill, handleSkillSelection }: SkillCardPropTypes) => {
     >
       {hasSubSkill && <Icon pos="absolute" top={2} right={2} fontSize={16} as={FcInfo} />}
 
-      <Icon fontSize={45} as={skill.icon} p={1} color={skill.color} />
+      <Icon fontSize={45} as={skill.icon} p={1} color={skill.color} _dark={{ color: skill.darkColor ?? skill.color }} />
 
       <Heading fontSize={18} whiteSpace="nowrap" >
         {skill.name}
