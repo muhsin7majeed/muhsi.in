@@ -5,6 +5,8 @@ import {
   SiChakraui,
   SiNodedotjs,
   SiSqlite,
+  SiAstro,
+  SiGreensock,
 } from "react-icons/si";
 import { DiJavascript1, DiHtml5, DiCss3 } from "react-icons/di";
 
@@ -71,6 +73,21 @@ const PROJECTS_DATA: Project[] = [
       { name: "ChakraUI", icon: SiChakraui, color: "#319795" },
       { name: "NodeJS", icon: SiNodedotjs, color: "#339933" },
       { name: "SQLite", icon: SiSqlite, color: "#003B57" },
+      { name: "Open-source", icon: ImEarth, color: "#4CAF50" },
+    ],
+  },
+  {
+    id: 5,
+    title: "Realms",
+    description:
+      "A customizable Astro portfolio with multiple independently art-directed themes, each with its own layout, visuals, and motion.",
+    image: "/assets/realms.png",
+    githubUrl: "https://github.com/muhsin7majeed/realms",
+    websiteUrl: "https://muhsin7majeed.github.io/realms/",
+    tags: [
+      { name: "Astro", icon: SiAstro, color: "#FF5D01" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "GSAP", icon: SiGreensock, color: "#88CE02" },
       { name: "Open-source", icon: ImEarth, color: "#4CAF50" },
     ],
   },
