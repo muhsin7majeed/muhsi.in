@@ -1,11 +1,13 @@
 import { ReactNode, useRef } from "react";
 import { useInView } from "framer-motion";
-import { Box, Flex, HStack } from "@chakra-ui/react";
+import { Box, Flex, HStack, useColorModeValue } from "@chakra-ui/react";
 import LineWithCircle from "@/components/timeline/LineWithCircle";
 
 const TimeLineItem = ({ children }: { children: ReactNode }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const backgroundColor = useColorModeValue("gray.100", "gray.700");
+  const arrowColor = useColorModeValue("#edf2f6", "#2d3748");
 
   return (
     <Flex
@@ -21,7 +23,7 @@ const TimeLineItem = ({ children }: { children: ReactNode }) => {
 
       <HStack
         p={{ base: 3, sm: 6 }}
-        bg={"gray.100"}
+        bg={backgroundColor}
         rounded="lg"
         alignItems="center"
         pos="relative"
@@ -30,7 +32,7 @@ const TimeLineItem = ({ children }: { children: ReactNode }) => {
           content: `""`,
           w: "0",
           h: "0",
-          borderColor: `transparent #edf2f6 transparent`,
+          borderColor: `transparent ${arrowColor} transparent`,
           borderStyle: "solid",
           borderWidth: "15px 15px 15px 0",
           position: "absolute",

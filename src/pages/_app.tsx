@@ -12,6 +12,10 @@ import { defaultSEOConfig } from "@/config/seo";
 
 export default function App({ Component, pageProps }: AppProps) {
   const theme = extendTheme({
+    config: {
+      initialColorMode: "system",
+      useSystemColorMode: false,
+    },
     colors: {
       primary: {
         50: "#ead1ee",

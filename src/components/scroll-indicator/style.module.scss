@@ -9,7 +9,7 @@
   .mouse {
     width: 30px;
     height: 45px;
-    border: 2px solid #1a202c;
+    border: 2px solid currentColor;
     border-radius: 25px;
     position: relative;
     transform-origin: bottom center;
@@ -33,8 +33,8 @@
     width: 8px;
     height: 8px;
     margin-bottom: 5px;
-    border-right: 2px solid #1a202c;
-    border-bottom: 2px solid #1a202c;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
     transform: rotate(45deg);
     opacity: 0.8;
     animation: fadeInOut 2s ease-in-out infinite;

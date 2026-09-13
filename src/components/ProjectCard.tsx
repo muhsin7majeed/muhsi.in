@@ -8,11 +8,11 @@ import {
   Text,
   Icon,
   Link,
-  HStack,
   Badge,
   IconButton,
   Tooltip,
   Flex,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
@@ -26,6 +26,8 @@ interface ProjectCardPropTypes {
 const ProjectCard = ({ project, index }: ProjectCardPropTypes) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const headingColor = useColorModeValue("gray.800", "whiteAlpha.900");
+  const descriptionColor = useColorModeValue("gray.600", "gray.300");
 
   return (
     <Card
@@ -112,11 +114,11 @@ const ProjectCard = ({ project, index }: ProjectCardPropTypes) => {
 
       {/* Project Content */}
       <Box p={6}>
-        <Heading size="md" mb={3} color="gray.800">
+        <Heading size="md" mb={3} color={headingColor}>
           {project.title}
         </Heading>
 
-        <Text color="gray.600" mb={4} lineHeight="tall">
+        <Text color={descriptionColor} mb={4} lineHeight="tall">
           {project.description}
         </Text>
 

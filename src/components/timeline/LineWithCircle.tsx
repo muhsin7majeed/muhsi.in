@@ -1,6 +1,8 @@
-import { Box, Flex, chakra } from "@chakra-ui/react";
+import { Box, Flex, chakra, useColorModeValue } from "@chakra-ui/react";
 
 const LineWithCircle = () => {
+  const lineColor = useColorModeValue("gray.200", "gray.600");
+  const circleBackground = useColorModeValue("white", "gray.800");
   return (
     <Flex pos="relative" alignItems="center" mr="40px">
       <chakra.span
@@ -8,7 +10,7 @@ const LineWithCircle = () => {
         left="50%"
         height="calc(100% + 10px)"
         border="1px solid"
-        borderColor={"gray.200"}
+        borderColor={lineColor}
         top="0px"
       />
 
@@ -24,7 +26,7 @@ const LineWithCircle = () => {
           backgroundSize="cover"
           backgroundRepeat="no-repeat"
           backgroundPosition="center center"
-          backgroundColor="rgb(255, 255, 255)"
+          backgroundColor={circleBackground}
           borderRadius="100px"
           border="3px solid"
           borderColor="primary.500"

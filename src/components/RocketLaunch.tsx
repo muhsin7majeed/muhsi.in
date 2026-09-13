@@ -43,14 +43,14 @@ const RocketLaunch = () => {
   };
 
   return (
-    <Box textAlign="center" mt={5}>
+    <Box textAlign="center">
       {launchStatus === "idle" && (
         <IconButton
           onClick={handleLaunch}
           fontSize={30}
           color="primary.500"
           variant="ghost"
-          aria-label="lauch rocket"
+          aria-label="Launch rocket"
           icon={<MdRocketLaunch />}
         />
       )}
