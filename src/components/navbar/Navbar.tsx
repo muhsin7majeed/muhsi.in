@@ -2,7 +2,7 @@ import { Container, Flex, HStack, IconButton, Text, useColorMode, useColorModeVa
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
-import RocketLaunch from "../RocketLaunch";
+import RocketLaunch from "../rocket/RocketLaunch";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();

@@ -5,7 +5,7 @@ import TimelineIcon from "@/components/svgs/TimelineIcon";
 const Experiences = () => {
   return (
     <Container maxW={"7xl"} mb={24} as="section">
-      <Heading fontSize={"4xl"} mb={4}>
+      <Heading fontSize={"4xl"} mb={4} data-launch-react>
         Experience
       </Heading>
 

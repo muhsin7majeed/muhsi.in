@@ -45,6 +45,7 @@ const ProjectCard = ({ project, index }: ProjectCardPropTypes) => {
     >
       <Card
         role="group"
+        data-launch-react
         height="100%"
         overflow="hidden"
         boxShadow="lg"

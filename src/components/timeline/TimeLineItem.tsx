@@ -44,7 +44,7 @@ const TimeLineItem = ({ children, isCurrent = false }: { children: ReactNode; is
           display: "block",
         }}
       >
-        <Box>{children}</Box>
+        <Box data-launch-react>{children}</Box>
       </HStack>
     </Flex>
   );

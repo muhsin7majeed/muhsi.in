@@ -48,10 +48,19 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <DefaultSeo {...defaultSEOConfig} />
       <GoogleAnalytics GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_ID} />
-      <ChakraBaseProvider theme={theme} >
-        <Navbar />
-        <Component {...pageProps} />
-        <Footer />
+      <ChakraBaseProvider theme={theme}>
+        {/*
+          The rocket launch rumbles #page-root and nudges elements inside it; #page-clip stays
+          still and clips that motion so it can never create horizontal scroll. The launch
+          overlay itself is portalled outside both.
+        */}
+        <div id="page-clip">
+          <div id="page-root">
+            <Navbar />
+            <Component {...pageProps} />
+            <Footer />
+          </div>
+        </div>
       </ChakraBaseProvider>
     </>
   );

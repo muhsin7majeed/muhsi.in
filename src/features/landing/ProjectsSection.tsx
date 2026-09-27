@@ -20,7 +20,7 @@ const ProjectsSection = () => {
         }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <Heading fontSize={"4xl"} mb={4}>
+        <Heading fontSize={"4xl"} mb={4} data-launch-react>
           Projects
         </Heading>
       </motion.div>

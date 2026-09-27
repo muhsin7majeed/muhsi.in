@@ -46,7 +46,7 @@ const HeroSection = () => {
           w="100%"
         >
           <motion.div {...reveal(0.08)}>
-            <Heading fontSize={"4xl"} mb={4}>
+            <Heading fontSize={"4xl"} mb={4} data-launch-react>
               <Text as="span" color="primary.500" me="3">
                 Little bit of this,
               </Text>
@@ -55,7 +55,7 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.div {...reveal(0.15)}>
-            <Text mb={4} fontSize={"2xl"}>
+            <Text mb={4} fontSize={"2xl"} data-launch-react>
               Hey there! I'm{" "}
               <Text as="span" fontWeight="medium" color="primary.500">
                 Muhsin
@@ -73,7 +73,7 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.div {...reveal(0.22)}>
-            <Flex alignItems="center" gap={4}>
+            <Flex alignItems="center" gap={4} data-launch-react>
               <Button
                 colorScheme="primary"
                 as={Link}
@@ -113,7 +113,7 @@ const HeroSection = () => {
           <SocialIcons isInView={isInView} />
         </Flex>
 
-        <Box w="100%">
+        <Box w="100%" data-launch-react>
           <HeroIcon />
         </Box>
       </Flex>
